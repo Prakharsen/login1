@@ -1,0 +1,21 @@
+<div class="container">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Picture</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let obj of userList">
+        <th>{{obj.id}}</th>
+        <td>{{obj.first_name}}</td>
+        <td>{{obj.last_name}}</td>
+        <td><img [src]="obj.avatar" alt="image"/></td>
+      </tr>
+      
+    </tbody>
+  </table>
+</div>
